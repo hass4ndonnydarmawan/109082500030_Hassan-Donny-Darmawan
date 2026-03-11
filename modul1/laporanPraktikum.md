@@ -106,8 +106,8 @@ fmt.Println("Total biaya: Rp.",total)
 <p align="justify">program ini untuk menghitung biaya pengiriman parsel, pada awal program user diminta menginputkan berat suatu parsel dalam gram lalu disimpan pada variable parsel, lalu program akan mencari berat utama (kg) dan berat yang lebih (sisa). </p>
 <p>untuk berat utama dicari dengan nilai variable parsel dibagi 1000 sedangkan untuk berat berlebih dicari dengan variable parsel di modulus 1000. selanjutnya untuk mencari harga maka berat utama dikali dengan harga per kilonya yaitu 10000, sedangkan untuk biaya tambahan ini menggunakan if else karena di bagian ini terdapat 3 kondisi yang berbeda dengan action yang berbeda juga yaitu;</p>
 <ol>
-<li>1. jika berat utama nya lebih dari 10 kg maka biaya tambahan(biaya berat sisa) digratiskan.</li>
-<li>2. jika berat utama kurang dari 10 kg dan berat sisa tidak kurang dari 500 maka harga 1 gr dari brt sisa adalah 5 rupiah.</li>
-<li>3. jika berat sisa kurang dari 500g maka  harga 1 gr dari berat sisa adalah 15 rupiah.</li>
+<li align="justify"> jika berat utama nya lebih dari 10 kg maka biaya tambahan(biaya berat sisa) digratiskan.</li>
+<li align="justify"> jika berat utama kurang dari 10 kg dan berat sisa tidak kurang dari 500 maka harga 1 gr dari brt sisa adalah 5 rupiah.</li>
+<li align="justify"> jika berat sisa kurang dari 500g maka  harga 1 gr dari berat sisa adalah 15 rupiah.</li>
 </ol>
-<p>selanjutnya untuk total hanya menambahkan saja biaya utama dengan biaya tambahan. diakhir total biaya akan ditampilkan pada user.</p>
+<p align="justify">selanjutnya untuk total hanya menambahkan saja biaya utama dengan biaya tambahan. diakhir total biaya akan ditampilkan pada user.</p>
