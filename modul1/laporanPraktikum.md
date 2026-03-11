@@ -42,13 +42,25 @@ fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 ```go
 package main
 import "fmt"
-func main() {
 
+func main (){
+var w1,w2,w3,w4 string
+status := true
+
+for i:=1;i<=5;{
+	fmt.Print("Percobaan ",i,": ")
+	fmt.Scanln(&w1,&w2,&w3,&w4)
+	if w1 != "merah" || w2!= "kuning" || w3!="hijau" || w4!="ungu"{
+		status= false
+	}
+	i++
+}
+fmt.Println("Berhasil:",status)
 }
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul1/output_soal1.png)
-[penjelasan]s
-
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul1/output/output_soal2.png)
+[penjelasan]
+<p align="justify">Program ini digunakan untuk membantu user apakah percobaan nya berhasil atau tidak, pada awal program ini berjalan user dimintakan input 4 warna hasil dari reaksi nantinya program ini akan mengecek apakah warna yang diinputkan user pada setiap percobaan nya sesuai urutan atau tidak, jika ada satu saja percobaan yang tidak urut warna nya maka program yang ada didalam if akan berjalan yaitu mengubah nilai status yang awalnya true menjadi false. diakhir status nya akan ditampilkan pada layar user.</p>
