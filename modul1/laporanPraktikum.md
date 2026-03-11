@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - ... </h1>
-<p align="center">Hassan Donny Darmawan - [NIM]</p>
+<p align="center">Hassan Donny Darmawan - 109082500030</p>
 
 ## Unguided 
 
