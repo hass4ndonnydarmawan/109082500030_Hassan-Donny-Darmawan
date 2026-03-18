@@ -80,7 +80,7 @@ fmt.Println("Berhasil:",status)
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul1/output/output_soal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul3/output/output-modul3-soal2.png)
 [penjelasan]
 <p align="justify">Program ini digunakan untuk membantu user apakah percobaan nya berhasil atau tidak, pada awal program ini berjalan user dimintakan input 4 warna hasil dari reaksi nantinya program ini akan mengecek apakah warna yang diinputkan user pada setiap percobaan nya sesuai urutan atau tidak, jika ada satu saja percobaan yang tidak urut warna nya maka program yang ada didalam if akan berjalan yaitu mengubah nilai status yang awalnya true menjadi false. diakhir status nya akan ditampilkan pada layar user.</p>
 
@@ -120,7 +120,7 @@ fmt.Println("Total biaya: Rp.",total)
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul1/output/output_soal3.png)
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul3/output/output-modul3-soal1.png)
 [penjelasan]
 <p align="justify">program ini untuk menghitung biaya pengiriman parsel, pada awal program user diminta menginputkan berat suatu parsel dalam gram lalu disimpan pada variable parsel, lalu program akan mencari berat utama (kg) dan berat yang lebih (sisa). </p>
 <p>untuk berat utama dicari dengan nilai variable parsel dibagi 1000 sedangkan untuk berat berlebih dicari dengan variable parsel di modulus 1000. selanjutnya untuk mencari harga maka berat utama dikali dengan harga per kilonya yaitu 10000, sedangkan untuk biaya tambahan ini menggunakan if else karena di bagian ini terdapat 3 kondisi yang berbeda dengan action yang berbeda juga yaitu;</p>
