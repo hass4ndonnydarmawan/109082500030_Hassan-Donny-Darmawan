@@ -100,7 +100,13 @@ func main (){
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul3/output/output-modul3-soal2.png)
 [penjelasan]
-<p align="justify">Program ini digunakan untuk membantu user apakah percobaan nya berhasil atau tidak, pada awal program ini berjalan user dimintakan input 4 warna hasil dari reaksi nantinya program ini akan mengecek apakah warna yang diinputkan user pada setiap percobaan nya sesuai urutan atau tidak, jika ada satu saja percobaan yang tidak urut warna nya maka program yang ada didalam if akan berjalan yaitu mengubah nilai status yang awalnya true menjadi false. diakhir status nya akan ditampilkan pada layar user.</p>
+<p align="justify">Program ini bertujuan untuk menghitung hasil dari komposisi beberapa fungsi matematika berdasarkan input yang diberikan oleh user. terdapat 3 fungsi komposisi yaitu fogoh,gohof dan hofog.</p>
+<ol>
+<li>Fungsi fogoh(n) merepresentasikan f(g(h(n))), dari beberapa tahap hasil akhir yang didapatkan (n − 1)².</li>
+<li>Fungsi gohof(n) merepresentasikan g(h(f(n))). dari beberapa tahap hasil akhir yang akan didapatkan n² − 1.</li>
+<li>Fungsi hofog(n) merepresentasikan h(f(g(n))), hasil akhirnya adalah (n − 2)² + 1.</li>
+</ol>
+<p align ="justify">pada func main program menerima 3 inputan dalam bilangan bulat, masing masing inputan akan digunakan sebagai parameter ketiga fungsi, dan hasil akhir yang didapat dari perhitungan akan ditampilkan kepada layar user.</p>
 
 
 
@@ -150,4 +156,5 @@ func main (){
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul3/output/output-modul3-soal3.png)
 [penjelasan]
-<p align="justify">program ini untuk menghitung biaya pengiriman parsel, pada awal program user diminta menginputkan berat suatu parsel dalam gram lalu disimpan pada variable parsel, lalu program akan mencari berat utama (kg) dan berat yang lebih (sisa). </p>
+<p align="justify">Program ini menentukan posisi sebuah titik terhadap dua lingkaran.func jarak untuk  menghitung jarak antara kedua titik sedangkan func didalam mengecek apakah titik berada di dalam lingkaran dengan membandingkan jarak ke pusat dengan radius.</p>
+<p align="justify">pada func main, program membaca dua lingkaran dan satu titik, lalu mengecek apakah titik berada di dalam masing-masing lingkaran. Hasilnya digunakan untuk menentukan apakah titik berada di dalam kedua lingkaran atau salah satu atau di luar keduanya yang kemudian akan ditampilkan.</p>
