@@ -52,8 +52,13 @@ func main () {
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul3/output/output-modul3-soal1.png)
 [penjelasan]
-<p align="justify">program ini bertujuan untuk melakukan pertukaran nilai variable. proses pertukaran ini menggunakan variable tambahan yaitu variable temp yang berfungsi sebagai tempat penyimpan nilai sementara agar saat nilai awal sedang melakukan pertukaran, nilai tersebut tidak hilang melainkan disimpan pada varible temp. lalu saat sudah selesai prosesnya maka user akan mendapatkan nilai variable yang memiliki urutan baru</p> 
-
+<p align="justify">program ini bertujuan untuk mengitung permutasi dan combination, dalam menghitung ini program menggunakan rumus</p>
+<ol>
+<li>P(n,r) = n! / (n−r)!</li>
+<li>C(n,r) = n! / (r!(n−r)!)</li>
+</ol> 
+<p align = "justify">function factorial disini digunakan untuk n! sesuai yang ada dirumus, nilai ini kemudian digunakan func combination dan permutation sesuai rumus masing masing, dengan syarat n >= r jika tidak memenuhi maka hasil nya 0.</p>
+<p align = "justify">pada function utama atau func main user diminta menginputkan nilai untuk dihitung combination dan permutation nya dan akan ditampilkan kembali hasil perhitunganya setelah semua program selesai</p>
 
 ### 2. [Soal]
 #### soal2.go
@@ -104,42 +109,45 @@ func main (){
 
 ```go
 package main 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
-func main (){
-var kg_parsel, sisa, parsel int
-var biayautama, biayatambahan, total float64
-
-fmt.Print("Berat parsel(gram): ")
-fmt.Scanln(&parsel)
-kg_parsel = parsel / 1000
-sisa = parsel % 1000
-
-fmt.Println("Detail berat:", kg_parsel, "kg +", sisa, "gr")
-biayautama = float64(kg_parsel)*10000
-if kg_parsel > 10{
-	biayatambahan = 0
-} else if sisa >=500 {
-	biayatambahan = float64(sisa)*5
-}else {
-	biayatambahan = float64(sisa)*15
+func jarak (a,b,c,d float64)float64 {
+	return math.Sqrt(math.Pow((a-c),2) + math.Pow((b-d),2))
 }
 
-fmt.Println("Detail biaya: Rp.",biayautama, "+ Rp.",biayatambahan)
-total = biayautama + biayatambahan
-fmt.Println("Total biaya: Rp.",total)
+func didalam (cx,cy,r,x,y float64) bool {
+	return jarak(cx,cy,x,y) <= r
+}
+
+func main (){
+	var (
+		cx1,cy1,cx2,cy2,r1,r2 float64
+		x,y float64
+	)
+	fmt.Scan(&cx1,&cy1,&r1)
+	fmt.Scan(&cx2,&cy2,&r2)
+	fmt.Scan(&x,&y)
+
+	d1 := didalam(cx1,cy1,r1,x,y)
+	d2 := didalam(cx2,cy2,r2,x,y)
+
+	if d1 && d2 {
+		fmt.Print("titik didalam lingkaran 1 dan 2")
+	}else if d1 {
+		fmt.Print("titik didalam lingkaran 1")
+	}else if d2 {
+		fmt.Print("titik didalam lingkaran 2")
+	}else {
+		fmt.Print("titik diluar lingkaran 1 dan 2")
+	}
 }
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul3/output/output-modul3-soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul3/output/output-modul3-soal3.png)
 [penjelasan]
 <p align="justify">program ini untuk menghitung biaya pengiriman parsel, pada awal program user diminta menginputkan berat suatu parsel dalam gram lalu disimpan pada variable parsel, lalu program akan mencari berat utama (kg) dan berat yang lebih (sisa). </p>
-<p>untuk berat utama dicari dengan nilai variable parsel dibagi 1000 sedangkan untuk berat berlebih dicari dengan variable parsel di modulus 1000. selanjutnya untuk mencari harga maka berat utama dikali dengan harga per kilonya yaitu 10000, sedangkan untuk biaya tambahan ini menggunakan if else karena di bagian ini terdapat 3 kondisi yang berbeda dengan action yang berbeda juga yaitu;</p>
-<ol>
-<li align="justify"> jika berat utama nya lebih dari 10 kg maka biaya tambahan(biaya berat sisa) digratiskan.</li>
-<li align="justify"> jika berat utama kurang dari 10 kg dan berat sisa tidak kurang dari 500 maka harga 1 gr dari brt sisa adalah 5 rupiah.</li>
-<li align="justify"> jika berat sisa kurang dari 500g maka  harga 1 gr dari berat sisa adalah 15 rupiah.</li>
-</ol>
-<p align="justify">selanjutnya untuk total hanya menambahkan saja biaya utama dengan biaya tambahan. diakhir total biaya akan ditampilkan pada user.</p>
