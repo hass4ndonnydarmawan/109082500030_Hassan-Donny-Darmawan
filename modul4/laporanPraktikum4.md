@@ -63,8 +63,8 @@ func main (){
 <li>P(n,r) = n! / (n−r)!</li>
 <li>C(n,r) = n! / (r!(n−r)!)</li>
 </ol> 
-<p align = "justify">function factorial disini digunakan untuk n! sesuai yang ada dirumus, nilai ini kemudian digunakan func combination dan permutation sesuai rumus masing masing, dengan syarat n >= r jika tidak memenuhi maka hasil nya 0.</p>
-<p align = "justify">pada function utama atau func main user diminta menginputkan nilai untuk dihitung combination dan permutation nya dan akan ditampilkan kembali hasil perhitunganya setelah semua program selesai</p>
+<p align = "justify">procedur factorial disini digunakan untuk n! sesuai yang ada dirumus, nilai ini kemudian digunakan procedure combination dan permutation dengan mengirimkan alamat memori untuk menyimpan hasil dari faktorial. nilai faktorial tersebut akan dikirimkan ke alamat memori yang dikasih apabila n>=r bernilai true dan hasil dari permutation atau combination juga akan dikirim ke alamat memori yang dikasih saat procedure combination atau permutation ini dipanggil, jika false maka nilai yang akan dikirim ke pemanggil procedure permutation dan combination adalah 0.</p>
+<p align = "justify">pada function utama atau func main user diminta menginputkan nilai untuk dihitung combination dan permutation lalu nilai tersebut dimasukan pada procedur combination dan permutation sebagai parameter dan mengirimkan alamat memori untuk menyimpan hasil dari perhitungan permutation dan combination. nantinya hasil tersebut akan ditampilkan pada user.</p>
 
 ### 2. [Soal]
 #### soal2.go
@@ -120,15 +120,13 @@ func main (){
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul4/output/output_soal2_modul4.png)
 [penjelasan]
-<p align="justify">Program ini bertujuan untuk menghitung hasil dari komposisi beberapa fungsi matematika berdasarkan input yang diberikan oleh user. terdapat 3 fungsi komposisi yaitu fogoh,gohof dan hofog.</p>
+<p align="justify">Program ini bertujuan untuk menentukan pemenang dari sebuah kompetisi soal berdasarkan jumlah soal yang berhasil dijawab dan waktu yang digunakan. Terdapat satu fungsi eksternal yang dipanggil yaitu <code>hitungSkor</code>.</p>
+
 <ol>
-<li>Fungsi fogoh(n) merepresentasikan f(g(h(n))), dari beberapa tahap hasil akhir yang didapatkan (n − 1)².</li>
-<li>Fungsi gohof(n) merepresentasikan g(h(f(n))). dari beberapa tahap hasil akhir yang akan didapatkan n² − 1.</li>
-<li>Fungsi hofog(n) merepresentasikan h(f(g(n))), hasil akhirnya adalah (n − 2)² + 1.</li>
+<li>Fungsi <code>hitungSkor(&banyaksoal, &waktu_terdikit)</code> dipanggil untuk setiap peserta dan mengisi dua nilai yaitu <code>banyaksoal</code> (jumlah soal yang berhasil dijawab) dan <code>waktu_terdikit</code> (total waktu yang digunakan), keduanya dikirim sebagai pointer sehingga nilai aslinya dapat diubah langsung oleh fungsi tersebut.</li>
 </ol>
-<p align ="justify">pada func main program menerima 3 inputan dalam bilangan bulat, masing masing inputan akan digunakan sebagai parameter ketiga fungsi, dan hasil akhir yang didapat dari perhitungan akan ditampilkan kepada layar user.</p>
 
-
+<p align="justify">Pada <code>func main</code>, program terus menerima input nama peserta secara berulang menggunakan perulangan <code>for</code> tanpa kondisi (infinite loop). Jika nama yang dimasukkan adalah <code>"Selesai"</code>, maka perulangan dihentikan. Untuk setiap peserta yang valid, program memanggil <code>hitungSkor</code> untuk mendapatkan skor mereka. Peserta pertama langsung ditetapkan sebagai pemenang sementara menggunakan variabel <code>cek</code>. Untuk peserta berikutnya, program membandingkan skornya dengan pemenang sementara — peserta baru akan menggantikan pemenang sementara jika ia menjawab soal lebih banyak, atau jika jumlah soalnya sama namun waktu yang digunakan lebih sedikit. Setelah semua peserta selesai diinput, program mencetak nama pemenang beserta jumlah soal dan waktu terbaiknya.</p>
 
 ### 3. [Soal]
 #### soal3.go
