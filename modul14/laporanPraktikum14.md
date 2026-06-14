@@ -56,7 +56,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul12/output/output1.png)
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul14/output/soal1.png)
 [penjelasan]
 <p align="justify">Program ini bertujuan untuk mengurutkan sejumlah data bilangan bulat menggunakan algoritma <i>Selection Sort</i>. Program menerima beberapa kumpulan data (test case), kemudian mengurutkan setiap kumpulan data dari nilai terkecil ke terbesar dan menampilkan hasil pengurutannya.</p>
 
@@ -187,7 +187,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul12/output/output2.png)
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul14/output/soal2.png)
 [penjelasan]
 <p align="justify">Program ini bertujuan untuk mengelompokkan bilangan berdasarkan paritasnya (ganjil dan genap), kemudian mengurutkan bilangan ganjil secara menaik (<i>ascending</i>) dan bilangan genap secara menurun (<i>descending</i>). Setelah proses pengelompokan dan pengurutan selesai, seluruh bilangan ganjil ditampilkan terlebih dahulu, diikuti oleh seluruh bilangan genap.</p>
 
@@ -283,7 +283,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul12/output/output3.png)
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul14/output/soal3.png)
 [penjelasan]
 <p align="justify">Program ini bertujuan untuk menghitung nilai median dari sekumpulan bilangan bulat. Data dimasukkan secara berurutan dan disimpan ke dalam array. Ketika pengguna memasukkan angka <i>0</i>, program akan mengurutkan seluruh data yang telah tersimpan menggunakan algoritma <i>Insertion Sort</i> dan menampilkan nilai median. Proses akan terus berlanjut hingga pengguna memasukkan nilai <i>-5313</i> sebagai tanda akhir program.</p>
 
@@ -402,7 +402,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul12/output/output1.png)
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul14/output/soal4.png)
 [penjelasan]
 <p align="justify">Program ini bertujuan untuk mengurutkan sekumpulan bilangan bulat menggunakan algoritma <i>Insertion Sort</i>, kemudian memeriksa apakah seluruh data yang telah diurutkan memiliki selisih (jarak) yang tetap antar elemen berurutan. Jika selisihnya tetap, program akan menampilkan besar jaraknya. Jika tidak, program akan memberikan informasi bahwa data tidak memiliki jarak yang tetap.</p>
 
@@ -556,7 +556,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul12/output/output2.png)
+![Screenshot Output Unguided 1_1](https://github.com/hass4ndonnydarmawan/109082500030_Hassan-Donny-Darmawan/blob/main/modul14/output/soal5.png)
 [penjelasan]
 <p align="justify">Program ini bertujuan untuk mengelola data buku pada sebuah perpustakaan sederhana. Program menerima sejumlah data buku, kemudian menampilkan buku dengan rating tertinggi, mengurutkan buku berdasarkan rating secara menurun, menampilkan lima buku teratas setelah pengurutan, serta mencari buku berdasarkan rating tertentu menggunakan algoritma <i>Binary Search</i>.</p>
 
